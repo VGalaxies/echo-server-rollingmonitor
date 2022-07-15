@@ -1,0 +1,20 @@
+# permissions for end users to view rollingmonitors.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: rollingmonitor-viewer-role
+rules:
+- apiGroups:
+  - demo.vgalaxy
+  resources:
+  - rollingmonitors
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - demo.vgalaxy
+  resources:
+  - rollingmonitors/status
+  verbs:
+  - get

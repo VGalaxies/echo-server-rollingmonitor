@@ -1,0 +1,7 @@
+apiVersion: demo.vgalaxy/v1alpha1
+kind: RollingMonitor
+metadata:
+  name: rollingmonitor-sample
+spec:
+  # TODO(user): Add fields here
+  deploymentName: echo-server
